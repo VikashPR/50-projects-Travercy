@@ -128,3 +128,21 @@ main
 {
     transform: translateY(0);
 }
+/* *android tablets  */
+
+@media (max-width:500px)
+{
+
+}
+@media(max-width:768px)
+{
+    header
+    {
+        padding-top: 6px;
+        padding-bottom: 6px ;
+    }
+    #form
+    {
+        justify-content: center;
+    }
+}
