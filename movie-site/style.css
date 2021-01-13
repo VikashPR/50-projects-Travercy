@@ -9,6 +9,14 @@
 {
     box-sizing: border-box;
 }
+.btn
+{
+    margin: 5px 50px;
+    padding: 0.6rem;
+    border-style: none;
+    font-size: 1rem;
+    border-radius: 50px;
+}
 body
 {
     background-color: var(--primary-color);
@@ -47,15 +55,18 @@ header
 {
     display: flex;
     justify-content: space-between;
+    
 }
 main
 {
     display: flex;
     flex-wrap: wrap;
+    
 }
 .movie img
 {
     width: 100%;
+    
 }
 .movie
 {

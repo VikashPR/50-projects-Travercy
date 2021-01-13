@@ -1,6 +1,6 @@
 const API_URL = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=3d21ce49abb89fb75081fbf726f18b8e`;
 const IMG_PATH = `https://image.tmdb.org/t/p/w1280`;
-const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=3d21ce49abb89fb75081fbf726f18b8e&query= `;
+const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=3d21ce49abb89fb75081fbf726f18b8e&query="`;
 
 //  NOTE api_key_for_TMDB=3d21ce49abb89fb75081fbf726f18b8e
 //  NOTE api_key_for_google_search=AIzaSyA4LgfB30RjtyNsWmctSgv7lBzah1DMYL8 
@@ -30,7 +30,8 @@ function showMovies(movies)
         movieEl.classList.add('movie');
 
         movieEl.innerHTML = `
-        <img src="${IMG_PATH + poster_path}" alt="${title}">
+            <a href="https://www.google.com/search?client=firefox-b-d&q=${title}"><img src="${IMG_PATH + poster_path}" alt="${title}"></a>
+
             <div class="movie-info">
           <h3>${title}</h3>
           <span class="${getClassByRate(vote_average)}">${vote_average}</span>
