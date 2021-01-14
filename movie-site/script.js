@@ -3,6 +3,7 @@ const IMG_PATH = `https://image.tmdb.org/t/p/w1280`;
 const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=3d21ce49abb89fb75081fbf726f18b8e&query="`;
 
 //  NOTE api_key_for_TMDB=3d21ce49abb89fb75081fbf726f18b8e
+
 //  NOTE api_key_for_google_search=AIzaSyA4LgfB30RjtyNsWmctSgv7lBzah1DMYL8 
 
 const form = document.getElementById("form");
