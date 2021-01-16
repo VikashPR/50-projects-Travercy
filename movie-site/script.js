@@ -26,7 +26,7 @@ function showMovies(movies)
     movies.forEach(movie => {
         const { title , poster_path , vote_average , overview , release_date} = movie
 
-        const movieEl =document.createElement("div");
+        const movieEl = document.createElement("div");
 
         movieEl.classList.add('movie');
 
